@@ -1,0 +1,38 @@
+@keyframes nav_color {
+  from {color: white;}
+  to {color: #db4437;}
+}
+
+@keyframes slide {
+  from {left: 100%;}
+  to {left: 50%}
+}
+
+@keyframes slide_stuff {
+  from {width: 100%;}
+  to {width: 50%}
+}
+
+.change-color {
+  animation: nav_color 1s ease-in;
+  color: #db4437;
+  animation-fill-mode: forwards;
+  -webkit-transition: color 2s ease-out;
+  -moz-transition: color 2s ease-out;
+  -o-transition: color 2s ease-out;
+  transition: color 2s ease-out;
+}
+
+.change-color:hover {
+  color: white;
+}
+
+.slide-menu {
+  animation: slide 1s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.slide-other {
+  animation: slide_stuff 1s ease-out;
+  animation-fill-mode: forwards;
+}
