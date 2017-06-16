@@ -9,7 +9,7 @@ function slide () {
   if ( !slid ) {
 
     menu.addClass('slide-menu');
-    let nav_links = document.querySelectorAll('.item_inner > span');
+    let nav_links = document.querySelectorAll('.item_inner');
     for(let i = 0; i < nav_links.length; i++)
       nav_links[i].className += ' change-color';
     document.getElementsByClassName('full_section_inner')[0].className += ' slide-other';

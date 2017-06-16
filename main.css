@@ -13,17 +13,16 @@
   to {width: 50%}
 }
 
-.change-color {
+.change-color > span {
   animation: nav_color 1s ease-in;
   color: #db4437;
-  animation-fill-mode: forwards;
-  -webkit-transition: color 2s ease-out;
-  -moz-transition: color 2s ease-out;
-  -o-transition: color 2s ease-out;
-  transition: color 2s ease-out;
+  -webkit-transition: color 0.5s ease-in;
+  -moz-transition: color 0.5s ease-in;
+  -o-transition: color 0.5s ease-in;
+  transition: color 0.5s ease-in;
 }
 
-.change-color:hover {
+.change-color > *:hover {
   color: white;
 }
 
