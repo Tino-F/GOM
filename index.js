@@ -9,7 +9,7 @@ function slide () {
   if ( !slid ) {
 
     menu.addClass('slide-menu');
-    let nav_links = document.querySelectorAll('.item_inner');
+    let nav_links = document.querySelectorAll('.item_inner > span');
     for(let i = 0; i < nav_links.length; i++)
       nav_links[i].className += ' change-color';
     document.getElementsByClassName('full_section_inner')[0].className += ' slide-other';
@@ -67,8 +67,6 @@ window.onload =  () => {
 
   menu = $j( '<div>', { id: 'the_main_menu' } );
   menuContent = $j( '<div>', { id: 'menu-ajax-content' } );
-  menu.css( { 'position':'fixed', 'left':'100%', 'width':'50%', 'min-height':'100%', 'background':'white', 'padding-top':'200px', 'text-align':'center' } );
-  menuContent.css( { 'overflow-y':'scroll', 'width': '100%' } );
   menu.append( menuContent );
 
   let links = document.querySelectorAll('.menu-item');

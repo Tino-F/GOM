@@ -5,15 +5,15 @@
 
 @keyframes slide {
   from {left: 100%;}
-  to {left: 50%}
+  to {left: 50%;}
 }
 
 @keyframes slide_stuff {
   from {width: 100%;}
-  to {width: 50%}
+  to {width: 50%;}
 }
 
-.change-color > span {
+.change-color {
   animation: nav_color 1s ease-in;
   color: #db4437;
   -webkit-transition: color 0.5s ease-in;
@@ -22,8 +22,8 @@
   transition: color 0.5s ease-in;
 }
 
-.change-color > *:hover {
-  color: white;
+.change-color:hover {
+  color: black;
 }
 
 .slide-menu {
@@ -34,4 +34,18 @@
 .slide-other {
   animation: slide_stuff 1s ease-out;
   animation-fill-mode: forwards;
+}
+
+#the_main_menu {
+  position: fixed;
+  left: 100%;
+  width: 50%;
+  min-height: 100%;
+  background: white;
+  padding-top: 200px;
+  text-align: center;
+}
+
+#menu-ajax-content {
+  width: 100%;
 }
